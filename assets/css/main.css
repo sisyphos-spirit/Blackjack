@@ -1,0 +1,73 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color:  #004830;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  color: white;
+  font-size: 1.2rem;
+  height: 100vh;
+}
+
+header {
+  padding: 20px;
+  background-color: #edd24d;
+  text-align: center;
+  color: #2d2d2d;
+}
+
+.juego {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: warp;
+  height: calc(100vh - 90px);
+}
+.acciones {
+  display: flex;
+  width: 600px;
+  margin-bottom: 60px;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+.computadora{
+  margin: 60px 0px 60px 0px;
+}
+.carta {
+  width: 150px;
+  left: 100px;
+  margin-top: 30px;
+  margin-left: -75px;
+}
+.btn {
+  width: 170px;
+  backface-visibility: hidden;
+  background-color: #4a84c3;
+  border-radius: 12px;
+  border-width: 0;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 20px;
+  padding: 10px 20px 10px 20px;
+}
+
+.btn:hover {
+  box-shadow: rgba(50, 50, 93, .1) 0 0 0 1px inset, rgba(50, 50, 93, .2) 0 6px 15px 0, rgba(0, 0, 0, .1) 0 2px 2px 0, rgba(50, 151, 211, .3) 0 0 0 4px;
+}
+.btn:active {
+  background-color: #edd24d;
+  color: #2d2d2d;
+}
+
+.btn:disabled {
+  background-color: grey;
+  font-weight: normal;
+}
+
+.audio{
+  display: none
+  }

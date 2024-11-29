@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Juega al 21</title>
+        <link rel="stylesheet" href="./assets/css/main.css">
+        <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon/blackjack.png">
+        <audio class="audio" id="audioFeliz" controls><source type="audio/wav" src="./assets/audios/melodia_feliz.wav"></audio>
+        <audio class="audio" id="audioTriste" controls><source type="audio/wav" src="./assets/audios/melodia_triste.wav"></audio>
+        <audio class="audio" id="audioTenso" controls><source type="audio/wav" src="./assets/audios/melodia_tensa.wav"></audio>
+    </head>
+    <body>
+        <header><h1 id="titulo">Juega al BlackJack</h1></header>
+        <div class="juego">
+            <div class="colum">
+                <div class=" acciones">
+                    <button class="btn" id="btnNuevoJuego">Nuevo Juego</button>
+                    <button class="btn" id="btnPedir">Pedir carta</button>
+                    <button class="btn" id="btnPasar">Pasar</button>
+                </div>
+                <div class="jugador01">
+                    <h2>JUGADOR 1 - Puntos: <small><span id="puntosJugador01">0</span></small></h2>
+                    <div id="jugador01-cartas"><br>
+                        <img class="carta" id="cartaJugador1" src="assets/cartas/red_back.png">
+                    </div>
+                </div>
+                <div class="computadora">
+                    <h2>COMPUTADORA - Puntos: <small><span id="puntosComputadora">0</span></small></h2>
+                    <div id="computadoras-cartas"><br>
+                        <img class="carta" id="cartaComputadora1" src="assets/cartas/red_back.png">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="./assets/js/main.js"></script>
+    </body>
+</html>
